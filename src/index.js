@@ -1,6 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './main.css';
-import App from './components/App.jsx';
+import App from './components/App';
+import Store from './components/Store';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function Index() {
+  return (
+    <Store>
+      <App />
+    </Store>
+  );
+}
+
+ReactDOM.render(<Index />, document.getElementById('root'));

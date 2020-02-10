@@ -1,25 +1,33 @@
 {
-  "name": "weather-app",
-  "version": "0.1.0",
+  "name": "weatherwizard",
+  "version": "2.1.1",
   "private": true,
-  "homepage": "https://jfarris587.github.io/weather-plus-react",
   "dependencies": {
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-scripts": "1.1.5"
+    "axios": "^0.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-google-maps": "^9.4.5",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "load-grunt-tasks": "^4.0.0"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
